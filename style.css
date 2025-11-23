@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: 
+        radial-gradient(circle at center, #DEC9E9 0%, #D2B7E5 100%),
+        url('cat.jpg') left no-repeat; 
+    min-height: 1024px;   
+    padding: 80px; 
+    background-size: auto, 300px auto;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; 
+    min-height: 80vh;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+    max-width: 800px; 
+    padding-left: 350px; 
+    margin-left: 320px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 5px; 
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 42px;
+    color: #6247AA;
+    margin-bottom: 5px; 
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 10px; 
+    width: 100%;
+    margin-top: -30px;
+}
+
+.text p {
+    font-size: 18px;
+    color: #7251B5;
+    text-align: center;
+    margin: 0;
+}
+.photo {
+    position: fixed;
+    top: 0;
+    left: -90px;
+    width: 100px;
+    height: auto;
+    z-index: 10;
+}
+.search-container {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    box-sizing: border-box;
+    background-color: #A06CD5;
+    display: flex;
+    align-items: center;
+    border: 2px solid #A06CD5; 
+    border-radius: 25px; 
+    padding: 10px 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    gap: 10px;
+}
+.search-input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 200px; 
+    background-color: transparent;
+}
+.search-btn {
+    background: #A06CD5;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #A06CD5;
+}
+.search-input::placeholder {
+color: #ffffff; 
+}
+
+.search-btn:hover {
+    background: #6247AA;
+}
+.weather-card {
+    position: fixed;
+    right: 90px;
+    top: 373px;
+}
+.name-city {
+    color: #6247AA;
+    font-size: 32px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: -10px;
+
+}
+.weather-item {
+    color: #7251B5;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.group-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.temperature {
+    color: #7251B5;
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+.weather-discription {
+    color: #6247AA;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+}

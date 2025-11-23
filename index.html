@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Cat</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Weather Cat</h1> 
+        </header>
+        <div class="text">
+            <p>Узнайте прогноз погоды!</p>
+            </div>
+        <main class="main-content">
+            <section class="search-section">
+                <div class="search-container">
+                    <input type="text"
+                    id="city-input"
+                    class="search-input"
+                    placeholder="Введите город...">
+                    <button id="search-btn" class="search-btn">
+                        Тык
+                    </button>
+                </div>
+            </section>
+            <section class="weather-section">
+                <div class="weather-card">
+                    <div class="weather-main">
+                        <h2 class="name-city" id="name-city">
+                            Москва
+                        </h2>
+                        <div class="temperature" id="temperature">
+                            +15°C
+                        </div>
+                        <p class="weather-discription" id="weather-discription">
+                            Солнечно
+                        </p>
+                        <div class="weather-details" id="weather-details">
+                            <div class="weather-item">
+                                <div class="detail-row">
+                                    <span class="more-details">Ощущается как:
+                                    </span>
+                                    <span class="details" id="feel">+13°C
+                                    </span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="more-details">Давление:
+                                    </span>
+                                    <span class="details" id="pressure">1013гПа
+                                    </span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="more-details">Влажность:
+                                    </span>
+                                    <span class="details" id="water">60%
+                                    </span>
+                                </div>
+                                <div class="detail-row">
+                                    <span class="more-details">Ветер:
+                                    </span>
+                                    <span class="details" id="wind">4 м/с
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="photo">
+        <img src="images/cat1.png" alt="котик">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
